@@ -1,0 +1,31 @@
+{
+  "work": [
+    {
+      "id": "software-developer",
+      "company": "Intuit Canada",
+      "companySrc": "https://quickbooks.intuit.com/ca/",
+      "designation": "Software Developer I",
+      "jobDescription": [
+        "Led Agile development as Scrum Master for 7 engineers, boosting velocity 10% and ensuring 100% SLA defect resolution.",
+        "Engineered a low/no-code platform for QuickBooks Online, enhancing onboarding for 9M+ customers and increasing conversions.",
+        "Drove 100% on-time delivery by prioritizing backlogs and modernizing UI with UX/Product teams, improving engagement by 12%.",
+        "Strengthened reliability and developer experience through internal tools, expanded test coverage, and mentoring via code reviews and knowledge-sharing."
+      ],
+      "duration": ["June 2023", "September 2024"],
+      "imgSrc": "qbo.png"
+    },
+    {
+      "id": "software-developer-coop",
+      "company": "Intuit Canada",
+      "companySrc": "https://quickbooks.intuit.com/ca/",
+      "designation": "Software Developer Co-op",
+      "jobDescription": [
+        "Optimized web shell for 9M+ QuickBooks Online users, migrating core plugins and boosting performance, reliability, and user experience.",
+        "Enhanced productivity by building a TypeScript metadata analyzer to reduce technical debt, implementing monitoring for 6 key plugins, and accelerating API failure detection.",
+        "Collaborated in Agile teams, contributing clean, maintainable code, debugging issues, and engaging in daily stand-ups to ensure project alignment and on-time delivery."
+      ],
+      "duration": ["January 2021", "August 2022"],
+      "imgSrc": "/qbo.png"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "projects": [
+    {
+      "category": "Data Engineering",
+      "projectList": [
+        {
+          "id": "modern-data-pipeline",
+          "name": "Modern Data Pipeline",
+          "description": "End-to-end pipeline for e-commerce reviews with Airflow orchestration, DBT modeling, and BigQuery analytics.",
+          "tech": ["Airflow", "DBT", "BigQuery", "GCS", "Python", "SQL"],
+          "links": {
+            "github": "https://github.com/nishthapant/dbt-project"
+          },
+          "imgSrc": "/pipeline.png"
+        }
+      ]
+    },
+    {
+      "category": "Frontend Development",
+      "projectList": [
+        {
+          "id": "nutrition-tracker",
+          "name": "Nutrition Tracker",
+          "description": "React + TypeScript app to explore fruits, track calories, and visualize intake with charts.",
+          "tech": ["React", "TypeScript", "Vite", "Chakra UI", "Chart.js"],
+          "links": {
+            "github": "https://github.com/nishthapant/fruityjar",
+            "live": "https://fruityjar.vercel.app/"
+          },
+          "imgSrc": "/tracker.png"
+        }
+      ]
+    },
+    {
+      "category": "Generative AI Applications",
+      "projectList": [
+        {
+          "id": "ai-study-buddy",
+          "name": "AI Study Buddy",
+          "description": "RAG-powered study assistant for extracting insights from PDFs with Multi-Query Q&A.",
+          "tech": ["Python", "LangChain", "OpenAI", "Streamlit", "ChromaDB"],
+          "links": {
+            "github": "https://github.com/nishthapant/ai-study-buddy"
+          },
+          "imgSrc": "/bot.png"
+        },
+        {
+          "id": "conversational-ai-chatbot",
+          "name": "Conversational AI Chatbot",
+          "description": "Stateful chatbot with context retention, built using LangChain + Chainlit with Phi-3-Mini.",
+          "tech": ["Python", "LangChain", "Chainlit", "Hugging Face"],
+          "links": {
+            "github": "https://github.com/nishthapant/ai-chatbot"
+          },
+          "imgSrc": "/chatbot.png"
+        }
+      ]
+    }
+  ]
+}

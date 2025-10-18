@@ -1,26 +1,237 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes pulseGlow {
+  0% {
+    text-shadow: none;
+    color: var(--accent);
   }
+  100% {
+    text-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent),
+      0 0 30px var(--accent);
+  }
+}
+
+:root {
+  --background: #04162f;
+  --foreground: #ffff;
+  --accent: #09a599;
+  --detail-accent: #737d8d;
+  --font-sans: "inter", sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-option {
+  padding: 10px;
+}
+
+.nav-option:hover {
+  border-bottom: 1px solid #ffff;
+  color: var(--accent);
+  transition: 0.3s ease-in-out;
+}
+
+.scroll-text {
+  transition: color 0.2s ease, transform 0.2s ease;
+  transform-origin: top center;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+a:hover {
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+.glow-text {
+  color: var(--foreground);
+  text-shadow: 0 0 5px var(--accent), 0 0 10px var(--accent);
+  animation: pulseGlow 2s infinite alternate ease-in-out;
+}
+
+.static-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: var(--font-inter);
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  color: var(--foreground);
+}
+
+@media (min-width: 640px) {
+  .static-heading {
+    font-size: 3rem;
+  }
+}
+
+.static-subheading {
+  font-size: 1.75rem;
+  font-family: var(--font-inter);
+  font-weight: 500;
+}
+
+.static-subtext {
+  font-size: 1.2rem;
+  font-family: var(--font-inter);
+  opacity: 0.5;
+}
+
+.tagline {
+  font-family: var(--font-inter);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  max-width: 20rem;
+}
+
+@media (min-width: 640px) {
+  .tagline {
+    font-size: 1.2rem;
+  }
+}
+
+.socials {
+  padding-bottom: 2rem;
+}
+
+.about-heading {
+  font-size: 3.75rem;
+  font-weight: 800;
+  font-family: var(--font-inter);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--accent);
+  margin-bottom: 20px;
+  margin-top: 3rem;
+}
+
+@media (min-width: 640px) {
+  .about-heading {
+    font-size: 4.5rem;
+  }
+}
+
+.about-text {
+  font-family: var(--font-inter);
+  font-size: 1.2rem;
+}
+
+.card {
+  background: transparent;
+  transition: all 0.3s ease;
+  color: var(--foreground);
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 0 12px var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.tag {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--accent);
+  border-radius: 9999px;
+  background: transparent;
+  color: var(--foreground);
+  font-size: small;
+  font-weight: 500;
+  display: inline-block;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  cursor: default;
+}
+
+.tag:hover {
+  color: var(--accent);
+  background-color: rgba(9, 165, 153, 0.1);
+}
+
+/* .profile-img {
+  border-radius: 9999px;
+  width: 7.5rem;
+  height: 7.5rem;
+  border: 2px solid var(--accent);
+  padding: 4px;
+} */
+
+.project-img {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.job-img {
+  width: 6.5rem;
+  height: 4rem;
+  /* border: 2px solid var(--accent); */
+  padding: 1px;
+}
+
+.project-category {
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 4rem;
+}
+.category-name {
+  font-family: var(--font-inter);
+  font-size: x-large;
+  color: var(--foreground);
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .category-name {
+    font-size: x-large;
+  }
+}
+
+.project {
+  font-family: var(--font-inter);
+  font-size: medium;
+  color: var(--foreground);
+  padding: 2rem;
+}
+
+.project-name {
+  font-size: larger;
+}
+
+.project-desc {
+  opacity: 0.8;
+}
+
+.work {
+  font-family: var(--font-inter);
+  font-size: medium;
+  color: var(--foreground);
+  padding: 2rem;
+}
+
+.work-desg {
+  font-size: x-large;
+  padding-top: 1rem;
+}
+/* .work-desg:hover {
+  color: var(--accent);
+  transition: 0.3s ease-in-out;
+} */
+.work-comp {
+  font-size: large;
+  padding-bottom: 10px;
+  opacity: 0.7;
+}
+.work-dur {
+  padding-top: 1rem;
+}
+.work-desc {
+  font-size: medium;
+}
+
+li::marker {
+  color: var(--accent);
 }
