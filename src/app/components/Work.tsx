@@ -5,7 +5,7 @@ import WorkList from "./WorkList";
 
 const Work = () => {
   return (
-    <div className="py-6">
+    <div>
       <WorkList />
     </div>
   );

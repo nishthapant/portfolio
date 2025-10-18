@@ -121,6 +121,14 @@ a:hover {
   font-size: 1.2rem;
 }
 
+.highlight {
+  color: var(--foreground);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-shadow: 0 0 20px var(--accent);
+}
+
 .card {
   background: transparent;
   transition: all 0.3s ease;
@@ -163,6 +171,7 @@ a:hover {
 .project-img {
   width: 7.5rem;
   height: 7.5rem;
+  border-radius: 20px;
 }
 
 .job-img {

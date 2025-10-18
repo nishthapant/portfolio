@@ -5,28 +5,19 @@ import Socials from "./Socials";
 
 const StaticCard = () => {
   return (
-    <div className="h-screen grid grid-rows-3 px-20">
-      <div className="row-span-1 flex items-start py-8 justify-start">
+    <div className="h-screen flex flex-col justify-between px-6 sm:px-8 md:px-16 lg:px-20 py-8">
+      <div className="flex items-start justify-start">
         <Hero />
       </div>
-      <div className="row-span-1 flex items-start justify-start">
-        <div>
-          {/* <div className="flex items-center justify-center">
-            <img
-              src={headshot.src}
-              alt="Nishtha Pant"
-              className="profile-img"
-            />
-          </div> */}
-          <div className="glow-text tagline">
-            <p>
-              "I build modern, engaging web applications & explore AI to push
-              creative boundaries."
-            </p>
-          </div>
+      <div className="flex items-start justify-center">
+        <div className="glow-text tagline max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+          <p className="items-start text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
+            "I build modern, engaging web applications & explore AI to push
+            creative boundaries."
+          </p>
         </div>
       </div>
-      <div className="row-span-1 flex items-end justify-start">
+      <div className="flex items-end justify-start">
         <Socials />
       </div>
     </div>

@@ -8,19 +8,26 @@ const LandingPage = () => {
   useEffect(() => {
     // safe guard for servise side rendering
     if (typeof document === "undefined") return;
-    let viewportHeight = window.innerHeight;
+
+    const scrollContainer = document.querySelector(
+      ".right-panel-scrollable"
+    ) as HTMLElement;
 
     // make the text scroll sensitive
     const handleScroll = () => {
-      const texts = document.querySelectorAll(
+      if (!scrollContainer) return;
+      const texts = scrollContainer.querySelectorAll(
         ".scroll-text"
       ) as NodeListOf<HTMLElement>;
-      const activeZoneTop = viewportHeight * 0.15;
-      const activeZoneBottom = viewportHeight * 0.75;
+      const containerRect = scrollContainer.getBoundingClientRect();
+      const containerHeight = scrollContainer.clientHeight;
+
+      const activeZoneTop = containerHeight * 0.15;
+      const activeZoneBottom = containerHeight * 0.85;
 
       texts.forEach((text) => {
         const rect = text.getBoundingClientRect();
-        const locY = rect.top + rect.height / 2;
+        const locY = rect.top - containerRect.top + rect.height / 2;
 
         if (locY >= activeZoneTop && locY <= activeZoneBottom) {
           text.style.opacity = "1";
@@ -32,35 +39,34 @@ const LandingPage = () => {
 
     // make the text sensitive to resizing
     const handleResize = () => {
-      viewportHeight = window.innerHeight;
       handleScroll();
     };
 
     // add event listeners for scroll and resize events
-    window.addEventListener("scroll", handleScroll);
+    scrollContainer.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
     handleScroll();
 
     // cleanup event listeners on unmount
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      scrollContainer.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
-    <main className="flex h-screen">
+    <main className="flex flex-col lg:flex-row h-screen">
       <section
-        className="w-1/3 fixed h-screen flex flex-col items-start justify-start pl-8"
+        className="lg:w-1/3 w-full h-screen flex flex-col items-start justify-start pl-4 md:pl-8"
         id="staticcard"
       >
         <StaticCard />
       </section>
-      <section className="ml-[33.3333%] w-2/3 h-screen grid grid-rows-[auto_1fr]">
-        <div className="row-span-1">
+      <section className="lg:w-2/3 w-full h-screen flex flex-col">
+        <div className="flex-none">
           <NavBar />
         </div>
-        <div className="row-span-1">
+        <div className="flex-1 overflow-y-auto scroll-smooth right-panel-scrollable">
           <ScrollablePanel />
         </div>
       </section>

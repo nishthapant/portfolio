@@ -3,12 +3,12 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Socials = () => {
   return (
-    <div className="flex flex-row gap-8 socials">
+    <div className="flex flex-row gap-4 sm:gap-6 md:gap-6 socials">
       <a href="https://github.com/nishthapant" target="_blank">
-        <FaGithub size={30} className="hover:text-accent transition-colors" />
+        <FaGithub className="text-2xl sm:text-3xl md:text-4xl hover:text-accent transition-colors" />
       </a>
-      <a href="https://linkedin.com/in/nishthapant" target="_blank">
-        <FaLinkedin className="hover:text-accent transition-colors" size={30} />
+      <a href="https://www.linkedin.com/in/nishtha-pant/" target="_blank">
+        <FaLinkedin className="text-2xl sm:text-3xl md:text-4xl hover:text-accent transition-colors" />
       </a>
     </div>
   );

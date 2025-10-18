@@ -4,7 +4,7 @@ import ProjectList from "./ProjectList";
 
 const Projects = () => {
   return (
-    <div className="about-text py-6">
+    <div className="about-text">
       <ProjectList />
     </div>
   );
