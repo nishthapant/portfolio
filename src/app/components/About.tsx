@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="max-w-3xl text-left pr-12" id="about">
+    <div className="max-w-3xl text-left" id="about">
       <div className="scroll-text about-heading font-extrabold flex items-center pt-12">
         Hi, I’m Nishtha.
       </div>

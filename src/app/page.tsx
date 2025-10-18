@@ -63,9 +63,7 @@ const LandingPage = () => {
         <StaticCard />
       </section>
       <section className="lg:w-2/3 w-full h-screen flex flex-col">
-        <div className="flex-none">
-          <NavBar />
-        </div>
+        <NavBar />
         <div className="flex-1 overflow-y-auto scroll-smooth right-panel-scrollable">
           <ScrollablePanel />
         </div>

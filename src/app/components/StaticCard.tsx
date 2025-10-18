@@ -11,13 +11,14 @@ const StaticCard = () => {
       </div>
       <div className="flex items-start justify-center">
         <div className="glow-text tagline max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
-          <p className="items-start text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-center">
             "I build modern, engaging web applications & explore AI to push
             creative boundaries."
           </p>
         </div>
       </div>
-      <div className="flex items-end justify-start">
+      <div className="items-center justify-start">
+        <div className="border-t border-gray-700 my-6"></div>
         <Socials />
       </div>
     </div>
