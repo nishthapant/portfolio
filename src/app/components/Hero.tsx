@@ -10,8 +10,8 @@ const Hero = () => {
         <p className="static-subheading">Software Developer</p>
       </div>
       <p className="glow-text tagline text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-left">
-        "I build modern, engaging web applications & explore AI to push creative
-        boundaries."
+        &quot;I build modern, engaging web applications & explore AI to push
+        creative boundaries.&quot;
       </p>
     </div>
   );

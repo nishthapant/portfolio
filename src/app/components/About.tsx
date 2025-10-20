@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="max-w-3xl text-left">
       <div className="about-heading font-extrabold flex items-center">
-        Hi, I’m Nishtha.
+        Hi, I&rsquo;m Nishtha.
       </div>
       <p className="leading-relaxed mb-6 about-text scroll-text">
         I’m a <span className="highlight">software developer</span> passionate
