@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import ScrollablePanel from "./components/ScrollablePanel";
-import StaticCard from "./components/StaticCard";
+import StaticPanel from "./components/StaticPanel";
 import NavBar from "./components/NavBar";
 
 const LandingPage = () => {
@@ -23,7 +23,7 @@ const LandingPage = () => {
       const containerHeight = scrollContainer.clientHeight;
 
       const activeZoneTop = containerHeight * 0.15;
-      const activeZoneBottom = containerHeight * 0.85;
+      const activeZoneBottom = containerHeight * 0.95;
 
       texts.forEach((text) => {
         const rect = text.getBoundingClientRect();
@@ -57,10 +57,10 @@ const LandingPage = () => {
   return (
     <main className="flex flex-col lg:flex-row h-screen">
       <section
-        className="lg:w-1/3 w-full h-screen flex flex-col items-start justify-start pl-4 md:pl-8"
+        className="lg:w-1/3 w-full h-screen flex flex-col items-center justify-start"
         id="staticcard"
       >
-        <StaticCard />
+        <StaticPanel />
       </section>
       <section className="lg:w-2/3 w-full h-screen flex flex-col">
         <NavBar />

@@ -11,7 +11,7 @@
         "Drove 100% on-time delivery by prioritizing backlogs and modernizing UI with UX/Product teams, improving engagement by 12%.",
         "Strengthened reliability and developer experience through internal tools, expanded test coverage, and mentoring via code reviews and knowledge-sharing."
       ],
-      "duration": ["June 2023", "September 2024"],
+      "duration": ["2023", "2024"],
       "imgSrc": "qbo.png"
     },
     {
@@ -24,7 +24,7 @@
         "Enhanced productivity by building a TypeScript metadata analyzer to reduce technical debt, implementing monitoring for 6 key plugins, and accelerating API failure detection.",
         "Collaborated in Agile teams, contributing clean, maintainable code, debugging issues, and engaging in daily stand-ups to ensure project alignment and on-time delivery."
       ],
-      "duration": ["January 2021", "August 2022"],
+      "duration": ["2021", "2022"],
       "imgSrc": "/qbo.png"
     }
   ]

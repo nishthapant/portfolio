@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="max-w-3xl text-left" id="about">
-      <div className="scroll-text about-heading font-extrabold flex items-center pt-12">
+    <div className="max-w-3xl text-left">
+      <div className="about-heading font-extrabold flex items-center">
         Hi, I’m Nishtha.
       </div>
       <p className="leading-relaxed mb-6 about-text scroll-text">
@@ -37,7 +37,7 @@ const About = () => {
         <span className="highlight">continuous learning</span> not just as part
         of my career, but as something that fuels my curiosity and growth.
         Outside of code, I enjoy spending time at the gym, hanging out with my
-        dog, and learning new languages, currently, French!
+        dog, and learning new languages, currently French!
       </p>
     </div>
   );

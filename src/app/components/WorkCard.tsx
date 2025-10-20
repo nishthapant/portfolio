@@ -8,7 +8,7 @@ interface WorkCardProps {
 
 const WorkCard = ({ work }: WorkCardProps) => {
   return (
-    <div className="scroll-text card flex work">
+    <div className="scroll-text card flex work-card">
       <div className="flex-1">
         <img src={work.imgSrc} alt={work.designation} className="job-img" />
         <div className="work-dur">

@@ -5,8 +5,8 @@ import React from "react";
 const NavBar = () => {
   return (
     <nav className="nav">
-      <div className="flex">
-        <ul className="flex items-center justify-start space-x-6 w-full">
+      <div className="flex pt-14 px-4">
+        <ul className="flex items-center justify-start gap-x-16 w-full">
           <li className="nav-option">
             <a href="#about">About</a>
           </li>

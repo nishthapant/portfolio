@@ -5,7 +5,7 @@ import WorkList from "./WorkList";
 
 const Work = () => {
   return (
-    <div>
+    <div className="max-w-3xl work">
       <WorkList />
     </div>
   );
