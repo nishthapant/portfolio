@@ -8,6 +8,7 @@ const LandingPage = () => {
   useEffect(() => {
     // safe guard for servise side rendering
     if (typeof document === "undefined") return;
+    if (window.innerWidth <= 640) return;
 
     const scrollContainer = document.querySelector(
       ".right-panel-scrollable"
@@ -22,8 +23,11 @@ const LandingPage = () => {
       const containerRect = scrollContainer.getBoundingClientRect();
       const containerHeight = scrollContainer.clientHeight;
 
-      const activeZoneTop = containerHeight * 0.15;
-      const activeZoneBottom = containerHeight * 0.95;
+      const topActiveFactor = 0.08;
+      const bottomActiveFactor = 0.85;
+
+      const activeZoneTop = containerHeight * topActiveFactor;
+      const activeZoneBottom = containerHeight * bottomActiveFactor;
 
       texts.forEach((text) => {
         const rect = text.getBoundingClientRect();

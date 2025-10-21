@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className="nav">
       <div className="flex pt-14 px-4">
-        <ul className="flex items-center justify-start gap-x-16 w-full">
+        <ul className="flex items-center justify-start responsive-gap w-full">
           <li className="nav-option">
             <a href="#about">About</a>
           </li>

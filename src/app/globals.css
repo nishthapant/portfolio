@@ -43,6 +43,9 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+.responsive-gap {
+  gap: 1rem;
+}
 /* ---------------- SCROLL TEXT ---------------- */
 .scroll-text {
   transition: color 0.2s ease, transform 0.2s ease;
@@ -167,9 +170,9 @@ a:hover {
 }
 .projects-heading {
   font-family: var(--font-inter);
-  font-size: 1.2rem;
   font-weight: 400;
   text-shadow: 0 0 12px var(--accent);
+  padding-top: 4.6rem;
 }
 
 .project-category {
@@ -244,28 +247,83 @@ li::marker {
 
 /* ---------------- RESPONSIVE MEDIA QUERIES ---------------- */
 
-@media (min-width: 1024px) {
+/* Mobile (small phones) */
+@media (max-width: 639px) {
   .nav {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .responsive-gap {
+    gap: 2rem;
   }
   .static-heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-weight: 800;
   }
   .static-subheading {
-    font-size: 1.5rem;
-  }
-  .static-subtext {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   .tagline {
     font-size: 1rem;
-    max-width: 16rem;
+    max-width: 14rem;
+  }
+}
+
+/* Tablets / small screens (640px to 767px) */
+@media (min-width: 640px) and (max-width: 767px) {
+  .nav {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+  .responsive-gap {
+    gap: 2rem; /* sm screens */
+  }
+  .static-heading {
+    font-size: 3.5rem;
+    font-weight: 800;
+  }
+  .static-subheading {
+    font-size: 1.75rem;
+  }
+  .tagline {
+    font-size: 1.2rem;
+    max-width: 14rem;
+  }
+  .scroll-panel {
+    padding-left: 1rem;
+  }
+}
+
+/* Small laptops / medium screens (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .responsive-gap {
+    gap: 3rem;
+  }
+  .static-heading {
+    font-size: 3.5rem;
+    font-weight: 800;
+  }
+  .static-subheading {
+    font-size: 1.75rem;
+  }
+  .tagline {
+    font-size: 1.2rem;
+    max-width: 18rem;
+  }
+  .scroll-panel {
+    padding-left: 2rem;
   }
   .about-heading {
     font-size: 3rem;
   }
   .about-text {
+    font-size: 1.1rem;
+  }
+  .projects-heading {
     font-size: 1.1rem;
   }
   .project-img {
@@ -281,24 +339,77 @@ li::marker {
   }
 }
 
-@media (min-width: 1440px) {
+/* Laptops / desktops (1024px to 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .nav {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+  .responsive-gap {
+    gap: 3rem;
+  }
   .static-heading {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: 800;
   }
   .static-subheading {
     font-size: 1.75rem;
   }
-  .static-subtext {
+
+  .tagline {
     font-size: 1.2rem;
+    max-width: 20rem;
+  }
+
+  .about-heading {
+    font-size: 3.75rem;
+  }
+  .about-text {
+    font-size: 1.2rem;
+  }
+  .projects-heading {
+    font-size: 1.2rem;
+  }
+  .project-img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .job-img {
+    width: 6.5rem;
+    height: 4rem;
+  }
+  .card {
+    padding: 2rem;
+  }
+}
+
+/* Large desktops / 1440px+ */
+@media (min-width: 1440px) {
+  .nav {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+  .responsive-gap {
+    gap: 4rem;
+  }
+  .static-heading {
+    font-size: 3.5rem;
+    font-weight: 800;
+  }
+  .static-subheading {
+    font-size: 1.75rem;
   }
   .tagline {
     font-size: 1.2rem;
     max-width: 20rem;
   }
   .about-heading {
-    font-size: 3.75rem;
+    font-size: 4rem;
   }
   .about-text {
+    font-size: 1.2rem;
+  }
+  .projects-heading {
     font-size: 1.2rem;
   }
   .project-img {
@@ -311,27 +422,5 @@ li::marker {
   }
   .card {
     padding: 2rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .nav {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .static-heading {
-    font-size: 3.5rem;
-    font-weight: 800;
-  }
-  .static-subheading {
-    font-size: 2rem;
-    font-weight: 200;
-  }
-  .static-subtext {
-    font-size: 0.9rem;
-  }
-  .tagline {
-    font-size: 1.5rem;
-    max-width: 14rem;
   }
 }
