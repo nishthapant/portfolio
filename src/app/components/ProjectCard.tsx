@@ -22,8 +22,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         />
       </div>
       <div className="flex-1 flex flex-col gap-4 text-center md:text-left md:px-4">
-        <div className="project-name flex flex-row gap-2 items-center md:items-start">
-          <div className="md:text-2xl">{project.name}</div>
+        <div className="project-name flex justify-center md:justify-start gap-2 items-center">
+          <div className="text-center md:text-2xl">{project.name}</div>
           <FiExternalLink className="text-[var(--accent)] text-sm md:text-sm opacity-70 hover:opacity-100 transition" />
         </div>
         <div className="project-desc">
