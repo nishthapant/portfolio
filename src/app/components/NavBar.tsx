@@ -22,7 +22,7 @@ const NavBar = () => {
           </li>
         </ul>
         <button
-          className="md:hidden pl-1 pr-6 rounded hover:bg-gray-100"
+          className="md:hidden pl-1 pr-6 rounded"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <HiXMark size={24} /> : <HiMenu size={24} />}
