@@ -5,17 +5,17 @@ import Socials from "./Socials";
 
 const StaticCard = () => {
   return (
-    <div className="h-screen flex flex-col justify-center items-center lg:justify-between lg:pb-10">
-      <div className="py-10 lg:py-0">
+    <div className="h-screen flex flex-col justify-center md:items-start lg:justify-between lg:pb-10">
+      <div className="py-10 lg:px-16 lg:py-0 w-full">
         <Hero />
       </div>
-      <div className="leading-relaxed lg:p-10">
-        <p className="flex items-center justify-center glow-text tagline text-center text-sm md:text-lg lg:text-xl lg:justify-center lg:items-center">
+      <div className="w-full flex justify-center lg:justify-start items-center leading-relaxed lg:px-16 lg:py-0">
+        <p className="glow-text tagline text-center md:text-lg lg:text-xl lg:text-left">
           &quot;I build modern, engaging web applications & explore AI to push
           creative boundaries.&quot;
         </p>
       </div>
-      <div className="flex items-center justify-center py-15 lg:py-0 md:items-end md:justify-start">
+      <div className="w-full flex justify-center lg:justify-start py-15 lg:px-16 lg:py-0">
         <Socials />
       </div>
     </div>
