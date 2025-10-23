@@ -4,14 +4,12 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col gap-20">
-      <div>
-        <p className="font-extrabold static-heading">Nishtha Pant</p>
-        <p className="static-subheading">Software Developer</p>
-      </div>
-      <p className="glow-text tagline text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-left">
-        &quot;I build modern, engaging web applications & explore AI to push
-        creative boundaries.&quot;
+    <div className="flex flex-col items-center justify-center gap-2">
+      <p className="flex-1 font-extrabold text-center text-4xl sm:text-4xl md:text-6xl lg:text-3xl md:mt-20 lg:text-left">
+        Nishtha Pant
+      </p>
+      <p className="flex-1 font-light text-center text-lg sm:text-lg md:text-2xl lg:text-xl lg:text-left">
+        Software Developer
       </p>
     </div>
   );

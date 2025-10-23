@@ -8,7 +8,7 @@ const Socials = () => {
         <FaGithub className="text-2xl xs:text-lg sm:text-2xl md:text-3xl hover:text-accent transition-colors" />
       </a>
       <a href="https://www.linkedin.com/in/nishtha-pant/" target="_blank">
-        <FaLinkedin className="text-2xl sm:text-2xl md:text-3xl hover:text-accent transition-colors" />
+        <FaLinkedin className="text-2xl xs:text-lg sm:text-2xl md:text-3xl hover:text-accent transition-colors" />
       </a>
     </div>
   );

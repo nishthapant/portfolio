@@ -1,12 +1,16 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
+import { HiMenu } from "react-icons/hi";
+import { HiXMark } from "react-icons/hi2";
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="nav">
       <div className="flex pt-14 px-4">
-        <ul className="flex items-center justify-start responsive-gap w-full">
+        <ul className="hidden md:flex items-center justify-start responsive-gap w-full">
           <li className="nav-option">
             <a href="#about">About</a>
           </li>
@@ -17,6 +21,37 @@ const NavBar = () => {
             <a href="#work">Experience</a>
           </li>
         </ul>
+        <button
+          className="md:hidden pl-1 pr-6 rounded hover:bg-gray-100"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <HiXMark size={24} /> : <HiMenu size={24} />}
+        </button>
+        {isOpen && (
+          <div className="md:hidden flex gap-10 items-center mobile-menu">
+            <a
+              href="#about"
+              className="py-2 w-full text-center hover:bg-gray-50"
+              onClick={() => setIsOpen(false)}
+            >
+              About
+            </a>
+            <a
+              href="#projects"
+              className="py-2 w-full text-center hover:bg-gray-50"
+              onClick={() => setIsOpen(false)}
+            >
+              Projects
+            </a>
+            <a
+              href="#work"
+              className="py-2 w-full text-center hover:bg-gray-50"
+              onClick={() => setIsOpen(false)}
+            >
+              Experience
+            </a>
+          </div>
+        )}
       </div>
     </nav>
   );

@@ -10,7 +10,7 @@ const ProjectList = () => {
     <div className="max-w-3xl">
       {projects.map((categoryInfo, ind) => (
         <ul key={categoryInfo.category}>
-          <div className="category-name scroll-text">
+          <div className="category-name scroll-text pt-10 text-xl font-bold text-center md:text-left md:text-2xl">
             {categoryInfo.category}
           </div>
           <ul key={ind} className="flex flex-col gap-8 project-category">

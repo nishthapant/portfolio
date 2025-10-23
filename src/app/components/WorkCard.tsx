@@ -8,19 +8,23 @@ interface WorkCardProps {
 
 const WorkCard = ({ work }: WorkCardProps) => {
   return (
-    <div className="scroll-text card flex work-card">
-      <div className="flex-1">
-        <img src={work.imgSrc} alt={work.designation} className="job-img" />
-        <div className="work-dur">
+    <div className="scroll-text card flex flex-col md:flex-row work-card ">
+      <div className="flex-1 w-full h-auto flex-col md:w-1/3 md:h-1/3 flex items-center justify-center">
+        <img
+          src={work.imgSrc}
+          alt={work.designation}
+          className="flex-1 object-cover job-img"
+        />
+        <div className="flex-1 work-dur">
           {work.duration[0]} - {work.duration[1]}
         </div>
       </div>
-      <div className="flex-3 px-8 text-left">
+      <div className="flex-3 p-4 text-left md:px-8">
         <div className="work-desg">{work.designation}</div>
         <div className="work-comp">
           <a href={work.companySrc}>{work.company}</a>
         </div>
-        <ul className="list-disc ml-6 work-desc">
+        <ul className="list-disc ml-2 md:ml-6 work-desc">
           {work.jobDescription.map((point, ind) => {
             return (
               <li key={ind} className="py-1.5">
