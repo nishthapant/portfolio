@@ -18,6 +18,17 @@ const inter = Inter({
 
 export const metadata = {
   title: "Nishtha Pant | Portfolio",
+  description: "Portfolio of Nishtha Pant, Software Developer & AI Enthusiast",
+  icons: {
+    icon: "/favicon.png",
+  },
+  openGraph: {
+    title: "Nishtha Pant | Portfolio",
+    description:
+      "Portfolio of Nishtha Pant, Software Developer & AI Enthusiast",
+    images: ["/favicon.png"],
+    type: "website",
+  },
 };
 
 export default function RootLayout({

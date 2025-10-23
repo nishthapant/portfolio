@@ -131,6 +131,7 @@ a:hover {
   position: relative;
   display: inline-block;
   font-weight: 600;
+  font-family: var(--font-inter);
   margin-bottom: 2rem;
   color: var(--accent);
   letter-spacing: 0.5px;
