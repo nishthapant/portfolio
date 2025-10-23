@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="max-w-3xl text-left">
-      <div className="about-heading font-extrabold flex items-center pt-6 text-4xl md:text-5xl md:pt-0">
+      <div className="about-heading font-extrabold flex items-center pt-6 text-3xl md:text-5xl md:pt-0">
         Hi, I&rsquo;m Nishtha.
       </div>
       <p className="leading-relaxed mb-6 about-text scroll-text">
