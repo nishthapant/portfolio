@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Nishtha Pant - SWE Portfolio",
+  title: "Nishtha Pant | Portfolio",
 };
 
 export default function RootLayout({

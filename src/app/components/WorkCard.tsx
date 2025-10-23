@@ -19,7 +19,7 @@ const WorkCard = ({ work }: WorkCardProps) => {
           {work.duration[0]} - {work.duration[1]}
         </div>
       </div>
-      <div className="flex-3 p-4 text-left md:px-8">
+      <div className="flex-1 p-4 text-left md:px-8">
         <div className="work-desg">{work.designation}</div>
         <div className="work-comp">
           <a href={work.companySrc}>{work.company}</a>
