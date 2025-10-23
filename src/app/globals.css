@@ -103,7 +103,6 @@ a:hover {
 
 /* ---------------- ABOUT ---------------- */
 .about-heading {
-  font-size: 2.5rem;
   font-weight: 500;
   font-family: var(--font-inter);
   color: var(--accent);
@@ -373,9 +372,6 @@ li::marker {
   .scroll-panel {
     padding-left: 2rem;
   }
-  .about-heading {
-    font-size: 3rem;
-  }
   .about-text {
     font-size: 1.1rem;
   }
@@ -408,10 +404,6 @@ li::marker {
     font-size: 1.2rem;
     max-width: 20rem;
   }
-
-  .about-heading {
-    font-size: 3.75rem;
-  }
   .about-text {
     font-size: 1.2rem;
   }
@@ -442,9 +434,6 @@ li::marker {
   .tagline {
     font-size: 1.2rem;
     max-width: 20rem;
-  }
-  .about-heading {
-    font-size: 4rem;
   }
   .about-text {
     font-size: 1.2rem;
