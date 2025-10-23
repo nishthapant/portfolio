@@ -45,8 +45,8 @@
           "imgSrc": "/bot.png"
         },
         {
-          "id": "conversational-ai-chatbot",
-          "name": "Conversational AI Chatbot",
+          "id": "ai-chatbot",
+          "name": "AI Chatbot",
           "description": "Stateful chatbot with context retention, built using LangChain + Chainlit with Phi-3-Mini.",
           "tech": ["Python", "LangChain", "Chainlit", "Hugging Face"],
           "links": {
