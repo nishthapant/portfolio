@@ -9,11 +9,11 @@ interface WorkCardProps {
 const WorkCard = ({ work }: WorkCardProps) => {
   return (
     <div className="scroll-text card flex flex-col md:flex-row work-card ">
-      <div className="flex-1 w-full h-auto flex-col md:w-1/3 md:h-1/3 flex items-center justify-center">
+      <div className="w-full h-auto flex-col md:w-1/5 md:h-1/5 flex items-center justify-center">
         <img
           src={work.imgSrc}
           alt={work.designation}
-          className="flex-1 object-cover job-img"
+          className="flex-1 object-cover w-full h-auto job-img"
         />
         <div className="flex-1 work-dur">
           {work.duration[0]} - {work.duration[1]}
