@@ -25,27 +25,27 @@ const NavBar = () => {
           className="md:hidden pl-1 pr-6 rounded"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <HiXMark size={24} /> : <HiMenu size={24} />}
+          {isOpen ? <HiXMark size={20} /> : <HiMenu size={20} />}
         </button>
         {isOpen && (
-          <div className="md:hidden flex gap-10 items-center mobile-menu">
+          <div className="md:hidden flex gap-8 items-center mobile-menu">
             <a
               href="#about"
-              className="py-2 w-full text-center hover:bg-gray-50"
+              className="py-2 w-full text-center"
               onClick={() => setIsOpen(false)}
             >
               About
             </a>
             <a
               href="#projects"
-              className="py-2 w-full text-center hover:bg-gray-50"
+              className="py-2 w-full text-center"
               onClick={() => setIsOpen(false)}
             >
               Projects
             </a>
             <a
               href="#work"
-              className="py-2 w-full text-center hover:bg-gray-50"
+              className="py-2 w-full text-center"
               onClick={() => setIsOpen(false)}
             >
               Experience

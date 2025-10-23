@@ -49,6 +49,9 @@ body {
 
 .mobile-menu {
   background: var(--background);
+  font-size: small;
+  opacity: 0.8;
+  color: var(--foreground);
 }
 /* ---------------- SCROLL TEXT ---------------- */
 .scroll-text {
@@ -127,7 +130,6 @@ a:hover {
 .section-heading {
   position: relative;
   display: inline-block;
-  font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 2rem;
   color: var(--accent);
@@ -147,11 +149,6 @@ a:hover {
   transition: opacity 0.3s ease;
   /* padding-top: 8px; */
 }
-
-/* Optional hover effect (for interactivity) */
-/* .section-heading:hover::after {
-  opacity: 0.5;
-} */
 
 /* ---------------- CARD ---------------- */
 .card {
@@ -250,7 +247,6 @@ a:hover {
 }
 
 .work-desg {
-  font-size: 1rem;
   padding-top: 0.5rem;
 }
 
@@ -305,10 +301,6 @@ li::marker {
     border: 1px solid var(--accent);
     box-shadow: 0 0 12px var(--accent);
   }
-  .work-desg {
-    font-size: 1.1rem;
-    font-weight: 800;
-  }
 }
 
 /* Tablets / small screens (640px to 767px) */
@@ -338,15 +330,11 @@ li::marker {
     border: 1px solid var(--accent);
     box-shadow: 0 0 12px var(--accent);
   }
-  .work-desg {
-    font-size: 1.1rem;
-    font-weight: 800;
-  }
-  .section-heading {
+  /* .section-heading {
     font-size: 1.5rem;
     text-align: center;
     display: block;
-  }
+  } */
 }
 
 /* Small laptops / medium screens (768px to 1023px) */

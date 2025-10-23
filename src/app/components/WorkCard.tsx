@@ -20,7 +20,7 @@ const WorkCard = ({ work }: WorkCardProps) => {
         </div>
       </div>
       <div className="flex-1 p-4 text-left md:px-8">
-        <div className="work-desg">{work.designation}</div>
+        <div className="work-desg text-md md:text-2xl">{work.designation}</div>
         <div className="work-comp">
           <a href={work.companySrc}>{work.company}</a>
         </div>
