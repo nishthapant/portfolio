@@ -10,7 +10,6 @@ const Footer = () => {
         © 2025 Nishtha Pant. Built with passion and{" "}
         <GiCoffeeCup className="inline text-lg sm:text-lg md:text-xl" /> .
       </p>
-      {/* <GiCoffeeCup className="text-lg sm:text-lg md:text-xl" /> */}
     </div>
   );
 };

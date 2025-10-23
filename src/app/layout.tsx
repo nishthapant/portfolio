@@ -1,8 +1,9 @@
 import "./globals.css";
 
 import { Montserrat, Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 
-// Configure the fonts
+// fonts configured
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["600", "700", "800"],
