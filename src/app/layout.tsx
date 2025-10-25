@@ -38,7 +38,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${montserrat.variable} ${inter.variable}`}>
-      <body className="font-montserrat">{children}</body>
+      <body className="font-montserrat">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
